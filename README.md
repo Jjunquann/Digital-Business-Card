@@ -26,6 +26,16 @@ Then in `index.html`, update the title and description tags at the top. They sho
 
 Open `index.html` in a browser, or put the file on any static host (Cloudflare Pages, GitHub Pages, Netlify). No build step.
 
+## Deploy it
+
+1. Click **Use this template** and create your own repo.
+2. Edit `CONFIG` in `app.js` and the tags at the top of `index.html`.
+3. Host the folder on any static host:
+   - **Cloudflare Pages / Workers**: connect your repo, no build command, output directory `/`.
+   - **GitHub Pages**: Settings, Pages, deploy from the `main` branch.
+   - **Netlify**: drag the folder in, or connect the repo.
+4. Set `url` in `CONFIG` to your live address so the QR code and NFC link point at it.
+
 ## Hidden secrets
 
 Eleven things in the scenes react to a tap, and a counter beside the cat score tracks how many a visitor has found. Finding all of them earns a lucky pack. The list and what each does are in `SECRETS` and `secretTap` in `app.js`.
